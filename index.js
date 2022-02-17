@@ -38,6 +38,12 @@ app.post("/saveuser",sessionController.saveuser)
 //role 
 app.post("/roles",roleController.addRole)
 
+//allrole
+app.get("/roles",roleController.getAllRoles)
+
+//delete role
+app.delete("/roles/:roleId",roleController.deleteRole)
+
 
 //server 
 
