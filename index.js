@@ -44,6 +44,8 @@ app.get("/roles",roleController.getAllRoles)
 //delete role
 app.delete("/roles/:roleId",roleController.deleteRole)
 
+//update
+app.put("/roles",roleController.updateRole)
 
 //server 
 
