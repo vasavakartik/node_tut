@@ -3,6 +3,7 @@ const mongoose = require("mongoose")
 
 const sessionController = require("./controller/session-controller")
 const roleController = require("./controller/role-controller")
+const userController = require("./controller/user-controller")
 
 
 
@@ -46,6 +47,13 @@ app.delete("/roles/:roleId",roleController.deleteRole)
 
 //update
 app.put("/roles",roleController.updateRole)
+
+
+//user
+app.post("/users",userController.addUser)
+app.get("/users",userController.getAllUsers)
+app.delete("/users/:userId",userController.deleteUser)
+app.put("/users",userController.updateUser)
 
 //server 
 
