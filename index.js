@@ -55,6 +55,8 @@ app.get("/users",userController.getAllUsers)
 app.delete("/users/:userId",userController.deleteUser)
 app.put("/users",userController.updateUser)
 
+app.post("/login",userController.login)
+
 //server 
 
 app.listen(3000,function(){
